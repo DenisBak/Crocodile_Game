@@ -164,12 +164,12 @@ public class Game extends JPanel {
     public void startTimer() {
         if (timer != null) timer.stop();
 
-        secLabel.setText("05");
-        minLabel.setText("0");
+        secLabel.setText("00");
+        minLabel.setText("5");
 
         timer = new Timer(1000, new ActionListener() {
-            int sec = 5;
-            int min = 0;
+            int sec = 0;
+            int min = 5;
 
             @Override
             public void actionPerformed(ActionEvent e) {
